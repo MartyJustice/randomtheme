@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE plugin SYSTEM "manifest.dtd">
+<plugin version="2">
+	<info>
+		<version>0.9</version>
+		<name>randomtheme</name>
+		<title>Random Theme</title>
+		<author>Martijn Alberts</author>
+		<description>Picks a random theme</description>
+	</info>
+	<config>
+		<configfile>config.php</configfile>
+	</config>
+	<components>
+		<component>
+			<files>
+				<server>
+				</server>
+				<serverfile>php/plugin.randomtheme.php</serverfile>
+				<client>
+					<clientfile load="release">js/randomtheme.js</clientfile>
+					<clientfile load="debug">js/randomtheme.js</clientfile>
+					<clientfile load="source">js/randomtheme.js</clientfile>
+				</client>
+			</files>
+		</component>
+	</components>
+</plugin>
